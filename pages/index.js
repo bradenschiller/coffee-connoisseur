@@ -1,11 +1,24 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Banner from "./Components/Banner";
-import Link from "next/link";
+import CoffeeShopSelector from "./Components/CoffeeShopSelector";
+
+const coffeeShops = [
+  {
+    title: "Coffee-Shop 1",
+    id: 1,
+  },
+  {
+    title: "Coffee-Shop 2",
+    id: 2,
+  },
+  {
+    title: "Coffee-Shop 3",
+    id: 3,
+  },
+];
 
 export default function Home() {
-  const id = 1;
-
   return (
     <div className={styles.container}>
       <Head>
@@ -16,9 +29,11 @@ export default function Home() {
 
       <main>
         <Banner />
-        <Link href={`/coffee-shop/${id}`}>
-          <a>Take me to {id}</a>
-        </Link>
+        {coffeeShops.map((shop) => {
+          return (
+            <CoffeeShopSelector key={shop.id} title={shop.title} id={shop.id} />
+          );
+        })}
       </main>
 
       <footer className={styles.footer}></footer>
