@@ -1,8 +1,11 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Banner from "./Components/Banner";
+import Link from "next/link";
 
 export default function Home() {
+  const id = 1;
+
   return (
     <div className={styles.container}>
       <Head>
@@ -13,6 +16,9 @@ export default function Home() {
 
       <main>
         <Banner />
+        <Link href={`/coffee-shop/${id}`}>
+          <a>Take me to {id}</a>
+        </Link>
       </main>
 
       <footer className={styles.footer}></footer>
