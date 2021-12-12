@@ -1,0 +1,13 @@
+.primaryButton {
+  background-color: #1F2028;
+  border: 2px solid #e6e9ee;
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.secondaryButton {
+  background-color: #ffffff;
+  color: #1F2028;
+}

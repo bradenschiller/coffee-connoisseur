@@ -4,7 +4,6 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Component {...pageProps} />
-      <div>Add to every page</div>
     </>
   );
 }

@@ -1,0 +1,17 @@
+.bannerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.bannerTitle {
+  color: #ffffff;
+  font-size: 75px;
+  margin-bottom: .25rem;
+}
+
+.bannerSubtitle {
+  color: #ffffff;
+  font-size: 40px;
+  margin: 3rem 0;
+}
