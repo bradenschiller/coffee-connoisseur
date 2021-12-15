@@ -29,11 +29,17 @@ export default function Home() {
 
       <main>
         <Banner />
-        {coffeeShops.map((shop) => {
-          return (
-            <CoffeeShopSelector key={shop.id} title={shop.title} id={shop.id} />
-          );
-        })}
+        <div className={styles.coffeeShopContainer}>
+          {coffeeShops.map((shop) => {
+            return (
+              <CoffeeShopSelector
+                key={shop.id}
+                title={shop.title}
+                id={shop.id}
+              />
+            );
+          })}
+        </div>
       </main>
 
       <footer className={styles.footer}></footer>
